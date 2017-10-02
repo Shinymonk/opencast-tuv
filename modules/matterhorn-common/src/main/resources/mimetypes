@@ -44,3 +44,4 @@ application/font-woff           woff
 application/vnd.ms-fontobject   eot
 image/svg+xml                   svg
 text/vtt                        vtt srt
+application/octet-stream        mp2 mpg

@@ -449,4 +449,9 @@
     <Description>Windows Media Playlist</Description>
     <Extensions>wvx</Extensions>
   </MimeType>
+  <MimeType>
+    <Type>application/octet-stream</Type>
+    <Description>Application Octet Stream treitler hs18</Description>
+    <Extensions>mpg, mp2</Extensions>
+  </MimeType>
 </MimeTypes>

@@ -99,6 +99,7 @@ public final class MimeTypes {
   public static final MimeType JAR;
   public static final MimeType SMIL;
   public static final MimeType PNG;
+  public static final MimeType APP_OCTET;
 
   // Initialize common mime types
   static {
@@ -119,6 +120,7 @@ public final class MimeTypes {
     JAR = MimeTypes.parseMimeType("application/java-archive");
     SMIL = MimeTypes.parseMimeType("application/smil");
     PNG = MimeTypes.parseMimeType("image/png");
+    APP_OCTET = MimeTypes.parseMimeType("application/octet-stream");
     // initialize from file
     InputStream is = null;
     InputStreamReader isr = null;
