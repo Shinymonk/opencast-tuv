@@ -664,11 +664,18 @@ function($, bootbox, _, alertify) {
                         seriestitle = _.escape(data.mediapackage.seriestitle);
                     };
                     tile = tile + "<div class=\"seriestitle\">" + seriestitle + "</div>";
-
-                    if (data.mediapackage.start) {
-                        date = new Date(data.mediapackage.start);
-                    };
-                    tile = tile + "<div class=\"date\">" + date.toLocaleDateString() + "</div>";
+// inserted by AK as a test
+//
+                    var myTitle = _.escape(data.dcTitle);
+                    myDate = myTitle.match(/\d\d\d\d-\d\d-\d\d/); 
+                    if (myDate) {
+                      tile = tile + "<div class=\"date\">" + myDate[0] + "</div>";
+                    } else {
+                       if (data.mediapackage.start) {
+                          date = new Date(data.mediapackage.start);
+                       };
+                       tile = tile + "<div class=\"date\">" + date.toLocaleDateString() + "</div>";
+                    }
 
                     if (data.mediapackage.duration) {
                         time = data.mediapackage.duration;
